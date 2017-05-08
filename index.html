@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>AData Viz 1.0</title>
+
+    <style>
+
+    </style>
+
+    <script>window.$ = window.jQuery = require('./js/jquery.min.js');</script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link href = "css/simple-sidebar.css" rel = "stylesheet" >
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+    <div id="sidebar"></div>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id = "main"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<script>
+    var swagger = require('./swagtest/test.json');
+    SidebarActions = require('./js/sideBarActions').SidebarActions
+    $(document).ready(function() {
+        SidebarActions.onLoad()
+    })
+</script>
+
+
+</body>
+</html>

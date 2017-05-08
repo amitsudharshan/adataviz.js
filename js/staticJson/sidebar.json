@@ -1,0 +1,7 @@
+{
+    "menuHeader": "Add Source",
+    "menuID" : "addSource",
+    "items" : [
+        {"id": "source1", "itemName" : "Source 1"}
+    ]
+}
