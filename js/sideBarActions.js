@@ -13,14 +13,6 @@ class SidebarActions {
             $.when(updatePromise).then(function() {
                 $("#addSource").click(function() {
                     Utils.render("templates/addsource.html", "#main", {})
-                    alert("rendering")
-                })
-
-                $("#addSourceSubmit").click(function() {
-                    let url = $("#addSourceURL").text
-                    $.get(url, function() {
-                        alert(url)
-                    })
                 })
             })
         })
@@ -31,7 +23,6 @@ class SidebarActions {
     static update(json) {
         return Utils.render("templates/sidebar.html", "#sidebar", json)
     }
-
 }
 
 module.exports.SidebarActions = SidebarActions
